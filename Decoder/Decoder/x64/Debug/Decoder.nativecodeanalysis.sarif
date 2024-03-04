@@ -1,0 +1,311 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'Img.Quant_blk'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 3,
+                  "endLine": 42,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DecoderFunc8x8",
+                  "decoratedName": "DecoderFunc8x8",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+                          },
+                          "region": {
+                            "startLine": 19,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+                          },
+                          "region": {
+                            "startLine": 23,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "'Img.Quant_blk'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+                          },
+                          "region": {
+                            "startLine": 38,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+                          },
+                          "region": {
+                            "startLine": 41,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+                          },
+                          "region": {
+                            "startLine": 41,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 시작, ('<분기 조건>' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+                          },
+                          "region": {
+                            "startLine": 42,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "'Img.Quant_blk'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "산술 오버플로: 4 바이트 값의 '*' 연산자를 사용한 다음 결과를 8 바이트 값에 캐스트합니다. 오버플로를 방지하려면 '*' 연산자를 호출하기 전에 더 광범위한 형식에 값을 캐스트합니다(io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 22,
+                  "endLine": 24,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DecoderFunc8x8",
+                  "decoratedName": "DecoderFunc8x8",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "산술 오버플로: 4 바이트 값의 '*' 연산자를 사용한 다음 결과를 8 바이트 값에 캐스트합니다. 오버플로를 방지하려면 '*' 연산자를 호출하기 전에 더 광범위한 형식에 값을 캐스트합니다(io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 22,
+                  "endLine": 24,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DecoderFunc8x8",
+                  "decoratedName": "DecoderFunc8x8",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "산술 오버플로: 4 바이트 값의 '*' 연산자를 사용한 다음 결과를 8 바이트 값에 캐스트합니다. 오버플로를 방지하려면 '*' 연산자를 호출하기 전에 더 광범위한 형식에 값을 캐스트합니다(io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 50,
+                  "endLine": 24,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DecoderFunc8x8",
+                  "decoratedName": "DecoderFunc8x8",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31935.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Decoder.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "0ed599bc1d303e3a3bd96ff40dea4479365c59f34d67af7d4976463171c34962"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/imgclass3_hw_r5/decoder/decoder/main.h"
+          },
+          "hashes": {
+            "sha-256": "f799e0f8dd52e33437b7dd7e9fedf4357774f875b1635255d45c0922722c45cb"
+          }
+        }
+      ]
+    }
+  ]
+}

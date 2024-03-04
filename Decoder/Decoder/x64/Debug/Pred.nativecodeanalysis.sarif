@@ -1,0 +1,623 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "'ref.refPix[1]'에 쓰는 동안 버퍼 오버런이 발생했습니다."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 3,
+                  "endLine": 69,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "xFillReferenceSamples",
+                  "decoratedName": "xFillReferenceSamples",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 16,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 18,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 19,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 23,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('ctbY!=0&&ctbX!=0'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 35,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('ctbX==0&&ctbY!=0'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 44,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('ctbX==0&&ctbY==0'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 건너뛰기, ('i<=BlkSize*2'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 건너뛰기, ('i<=BlkSize'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 67,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "(별칭) 'i'이(가) 'BlkSize'의 값을 받습니다."
+                        }
+                      },
+                      "kinds": [
+                        "alias"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 67,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 시작, ('i<BlkSize*2' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 69,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "'ref.refPix[1][-2]'에 쓰기가 잘못됨, (쓰기 가능한 범위는 0에서 16 사이임)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "초기화되지 않은 메모리 'ref'을(를) 사용하고 있습니다."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                },
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 9,
+                  "endLine": 72,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "xFillReferenceSamples",
+                  "decoratedName": "xFillReferenceSamples",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 16,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "'ref'이(가) 초기화되지 않았습니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 18,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 19,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 23,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('ctbY!=0&&ctbX!=0'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 35,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('ctbX==0&&ctbY!=0'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 44,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('ctbX==0&&ctbY==0'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 건너뛰기, ('i<=BlkSize*2'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 건너뛰기, ('i<=BlkSize'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 67,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 67,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 건너뛰기, ('i<BlkSize*2'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 72,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+                          },
+                          "region": {
+                            "startLine": 72,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "'ref'이(가) 사용되는데 초기화되지 않았을 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31935.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Pred.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "e3ae45dd792c1dcbf316df01c5a4f0eb9faad0e9c2d5356352e25f1c9890d5db"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/imgclass3_hw_r5/decoder/decoder/main.h"
+          },
+          "hashes": {
+            "sha-256": "f799e0f8dd52e33437b7dd7e9fedf4357774f875b1635255d45c0922722c45cb"
+          }
+        }
+      ]
+    }
+  ]
+}

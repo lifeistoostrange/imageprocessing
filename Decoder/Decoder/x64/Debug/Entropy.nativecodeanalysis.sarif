@@ -1,0 +1,123 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'node'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Entropy.c"
+                },
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 2,
+                  "endLine": 80,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "make_tree",
+                  "decoratedName": "make_tree",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Entropy.c"
+                          },
+                          "region": {
+                            "startLine": 79,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "'node'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Entropy.c"
+                          },
+                          "region": {
+                            "startLine": 80,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "'node'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31935.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/Entropy.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "b6807430e9788decb8419cc607dbd511bf5554c5cff780f5dc16d7f20e0ed6de"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/imgclass3_hw_r5/decoder/decoder/main.h"
+          },
+          "hashes": {
+            "sha-256": "f799e0f8dd52e33437b7dd7e9fedf4357774f875b1635255d45c0922722c45cb"
+          }
+        }
+      ]
+    }
+  ]
+}

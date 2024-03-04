@@ -1,0 +1,73 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "산술 오버플로: 4 바이트 값의 '*' 연산자를 사용한 다음 결과를 8 바이트 값에 캐스트합니다. 오버플로를 방지하려면 '*' 연산자를 호출하기 전에 더 광범위한 형식에 값을 캐스트합니다(io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/InvTransQuant.c"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 30,
+                  "endLine": 25,
+                  "endColumn": 78
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InvTransQuantFunc",
+                  "decoratedName": "InvTransQuantFunc",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31935.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/ImgClass3_HW_r5/Decoder/Decoder/InvTransQuant.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "6b12f352a83ec1758998fd8e1c38d51f47d89e0ae89179dac8da40524be643d9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/imgclass3_hw_r5/decoder/decoder/main.h"
+          },
+          "hashes": {
+            "sha-256": "f799e0f8dd52e33437b7dd7e9fedf4357774f875b1635255d45c0922722c45cb"
+          }
+        }
+      ]
+    }
+  ]
+}

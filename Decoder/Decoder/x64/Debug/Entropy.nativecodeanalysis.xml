@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\ImgClass3_HW_r5\Decoder\Decoder\</FILEPATH>
+      <FILENAME>Entropy.c</FILENAME>
+      <LINE>80</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>NULL 포인터 'node'을(를) 역참조하고 있습니다. </DESCRIPTION>
+    <FUNCTION>make_tree</FUNCTION>
+    <DECORATED>make_tree</DECORATED>
+    <FUNCLINE>78</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\ImgClass3_HW_r5\Decoder\Decoder\</FILEPATH>
+        <FILENAME>Entropy.c</FILENAME>
+        <LINE>79</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'node'은(는) NULL일 수 있습니다.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\ImgClass3_HW_r5\Decoder\Decoder\</FILEPATH>
+        <FILENAME>Entropy.c</FILENAME>
+        <LINE>80</LINE>
+        <COLUMN>12</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'node'이(가) 역참조되었지만 여전히 NULL일 수 있습니다.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
